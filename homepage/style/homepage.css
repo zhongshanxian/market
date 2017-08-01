@@ -1,0 +1,79 @@
+
+.carousel-inner img {
+	width: 100%;
+}
+#product1 {
+	overflow: auto;/*清除产品栏的浮动*/
+}
+#product1 a {
+	text-decoration: none;
+}
+.items {
+	width: 32%;
+	float: left;
+	border: 1px solid #dedede;
+	margin: 0.6%;
+	font-size: 1.2em;
+	color: #333;
+}
+#product1 img {
+	width: 100%;
+}
+.price {
+	font-size: 20px;
+	color: #1c1;
+	border-top:1px dashed #ccc;
+	padding: 5px 0;
+}
+.price span
+{
+	float: right;
+	padding-right: 1px;
+}
+#recommend {
+	font-size: 1.2em;
+	border-top: 1px solid #ccc;
+}
+#recommend a {
+	text-decoration: none;
+	line-height: 50px;
+	color: black;
+}
+#recommend div {
+	height: 50px;
+	border-bottom: 1px solid #ccc;
+	padding: 0 10px;
+}
+.check {
+	float: right;
+}
+.versionexample {
+	font-size: 15px;
+	color: #444;
+	text-align: center;
+}
+header {
+	height: 40px;
+	padding:10px 0 0 10px;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+.icons {
+	background-image: url(img/icons.png);
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+}
+.iconbox {
+	width:25%;
+	text-align: center;
+	padding-bottom: 30px;
+	float: left;
+}
+.iconbox a {
+	text-decoration: none;
+	color: #444;
+}
+.iconboxpar {
+	overflow: auto;
+}

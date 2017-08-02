@@ -1,0 +1,152 @@
+/*头部样式*/
+header {
+	height: 50px;
+	font-size: 1.2em;
+	position: relative;
+	border-bottom:1px solid #dedede;
+	background-color: #eee;
+}
+.returnbtn {
+	width: 50px;
+	height: 50px;
+	color: gray;
+	padding: 15px;
+}
+.mycart {
+	line-height: 50px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#address {
+	text-decoration: none;
+	color: #333;
+	position: relative;
+	padding: 10px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	margin-top: 10px;
+}
+/*地址*/
+#address .glyphicon-chevron-right {
+	position: absolute;
+	right:10px;
+	top:10px;
+}
+/*商品*/
+#orderlist {
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	margin-top:10px;
+	overflow: auto;
+}
+.shop {
+	padding: 8px 0 0 8px;
+	font-size:0.9em;
+}
+.message {
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	width: 98%;
+	margin:0 auto 7px; 
+	padding: 10px 10px 15px 10px;
+	color: #333
+}
+.message span {
+	font-size:10px;
+}
+.productimg {
+	width: 14%;
+	float: left;
+}
+.name {
+	float: left;
+	width: 60%;
+	height: 50px;
+}
+.redword {
+	color: red;
+	padding:0 2px;
+}
+/*留言*/
+#comment {
+	padding:7px;
+	border: 1px solid #eee;
+	width:100%;
+	margin-top: 10px;
+}
+input.focus {
+	text-decoration: none;
+}
+#addall {
+	margin-top:20px;
+	border-bottom: 1px solid #eee;
+}
+#addall div {
+	padding:7px;
+	border-top: 1px solid #eee;
+}
+.productadd {
+	float: right;
+}
+/*底部样式*/
+footer {
+	width: 100%;
+	border-top:1px solid #eee;
+	position: fixed;
+	bottom:0px;
+	padding:5px;
+	background-color: white;
+}
+footer div {
+	float: left;
+	padding:10px 0 0 10px;
+	font-size: 1.3em;
+}
+footer button {
+	width:100px;
+	height:50px;
+	float: right;
+	padding:0 10px;
+	background-color: red;
+	color:white;
+	border:none;
+}
+#sumup {
+	color: red;
+}
+/*弹出框*/
+#mask
+{
+	background: rgba(0,0,0,0.6);
+	/*opacity:0.7;//ie兼容
+		filter:alpha(opacity=70);*/
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	display: none;
+}
+#popup
+{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 200;
+  color:white;
+  display: none;
+}
+.popupCon
+{
+	background: rgba(0,0,0,0.8);
+	padding:10px 30px;
+	border-radius: 6px;
+}
+.popupCon img
+{
+	width: 50px;
+	height: 50px;
+}

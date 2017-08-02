@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>order for goods</title>
+	<meta charset="utf-8">
+	<meta name="author" content="xian">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<link rel="stylesheet" type="text/css" href="style/order.css">
+	<!--bootstrap-->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<!--头部-->
+	<header>
+		<a href="#">
+			<span class="glyphicon glyphicon-chevron-left returnbtn"></span>
+		</a>
+		<span class="mycart">确认订单</span>
+	</header>
+
+	<!--收货地址-->
+	<a href="">
+		<div id="address">
+			<span class="glyphicon glyphicon-map-marker"> </span>
+			+ 添加收货地址
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</div>
+	</a>
+
+	<!--清单-->
+	<section id="orderlist">
+		<p class="shop"><span class="glyphicon glyphicon-home"> </span> 微商城</p>
+		<a href="#">
+			<div class="message">
+				<img src="../homepage/style/img/page3.jpg" class="productimg">
+				<div class="name">
+					<span>至尊版（微商城、小程序、iOS、Android）</span></div>
+				<div>￥128000<br>x4</div>
+			</div>
+		</a>
+		<p align="right">共<span class="redword">4</span>件商品 合计：<span class="redword allmoney1">￥512000.00</span></p>
+	</section>
+
+	<!--卖家留言-->
+	<input type="text" id="comment" placeholder="选填:买家留言（50字以内）">
+
+	<!--商品小计-->
+	<section id="addall">
+		<div><span>商品小计</span><span class="productadd addall1">￥512000.00</span></div>
+		<div><span>运费</span><span class="productadd addall2">￥0.00</span></div>
+	</section>
+
+	<!--支付按钮-->
+	<footer>
+		<div>
+			<p>需付：
+				<span id="sumup">￥512000.00</span><br>
+			</p>
+		</div>
+		<button id="pay">立即支付</button>
+	</footer>
+
+<!--</div> container-->
+<div id="mask"></div>
+<div id="popup">
+	<div class="popupCon">
+		<img src="style/img/loading.gif" id="popupimg">
+		<p id="popupword">请稍等...</p>
+	</div>
+</div>
+
+<script type="text/javascript" src="javascript/order.js"></script>
+</body>
+</html>

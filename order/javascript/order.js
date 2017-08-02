@@ -7,16 +7,18 @@ $("#sumup").text($(".allmoney1").text());
 $("#pay").click(function(){
 	$("#mask").show();
 	$("#popup").show();
+	//支付成功显示
+	var popup=setTimeout(function(){
+		$("#popupimg").attr("src","style/img/success.png");
+		$("#popupword").text("支付成功");
+		//退出弹出框
+		var popup=setTimeout(function(){
+			$("#popupimg").attr("src","style/img/loading.gif");
+			$("#popupword").text("请稍等...");
+			$("#mask").hide();
+			$("#popup").hide();
+		},2000);
+	},5000);
 });
 
-//支付成功显示
-var popup=setTimeout(function(){
-	$("#popupimg").attr("src","style/img/success.png");
-	$("#popupword").text("支付成功");
-},5000);
 
-//退出弹出框
-var popup=setTimeout(function(){
-	$("#mask").hide();
-	$("#popup").hide();
-},7000);

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cart</title>
+	<meta charset="utf-8">
+	<meta name="author" content="xian">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<link rel="stylesheet" type="text/css" href="style/cart.css">
+	
+	<!--bootstrap-->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!--头部-->
+	<header>
+		<a href="#">
+			<span class="glyphicon glyphicon-chevron-left returnbtn"></span>
+		</a>
+		<span class="mycart">我的购物车</span>
+		<button id="delete">删除</button>
+	</header>
+
+	<!--在购物车的商品-->
+	<section class="product">
+		<a href="#">
+			<div class="productlist">
+				<span class="glyphicon glyphicon-home"> 自营商品</span>
+				<span class="glyphicon glyphicon-chevron-right go"></span>
+			</div>
+		</a>
+		<div class="product1">
+			<span class="glyphicon glyphicon-ok-sign clicksure1"></span>
+			<a href="#">
+				<div class="message">
+					<img src="../homepage/style/img/page3.jpg" class="productimg">
+					<div class="name"><span>至尊版（微商城、小程序、iOS、Android）</span></div>
+					<div>￥<span id="money1">138000</span><br>
+						<button class="btndown">-</button>
+						<span id="pro1">1</span>
+						<button class="btnup">+</button>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="product2">
+			<span class="glyphicon glyphicon-ok-sign clicksure2"></span>
+			<a href="#">
+				<div class="message">
+					<img src="../homepage/style/img/page3.jpg" class="productimg">
+					<div class="name"><span>专业版[年费]</span></div>
+					<div>￥<span id="money2">3800</span><br>
+						<button class="btndown">-</button>
+						<span id="pro2">1</span>
+						<button class="btnup">+</button>
+					</div>
+				</div>
+			</a>
+		</div>
+	</section>
+
+	<!--结算-->
+	<footer>
+		<span class="glyphicon glyphicon-ok-sign countclick"> 全选</span>
+		<div>合计：
+			<span id="sumup">￥0.00</span><br>
+			<span>不含运费</span>
+		</div>
+		<button id="btnsum">结算(<span id="sumnum">0</span>)</button>
+	</footer>W
+
+<script type="text/javascript" src="javascript/cart.js"></script>
+</body>
+</html>

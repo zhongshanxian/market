@@ -1,4 +1,6 @@
-
+body {
+	background-color: gray;
+}
 .carousel-inner img {
 	width: 100%;
 }
@@ -76,4 +78,10 @@ header {
 }
 .iconboxpar {
 	overflow: auto;
+}
+footer {
+	margin-top:20px;
+}
+footer .iconbox {
+	width: 33.33%;
 }

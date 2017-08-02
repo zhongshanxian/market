@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>product message</title>
+	<meta charset="utf-8">
+	<meta name="author" content="xian">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<link rel="stylesheet" type="text/css" href="style/message.css">
+	<!--bootstrap-->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!--头部-->
+	<header>
+		<a href="#">
+			<span class="glyphicon glyphicon-chevron-left returnbtn"></span>
+		</a>
+		<span class="promessage">商品详情</span>
+	</header>
+
+	<img src="../homepage/style/img/page2.jpg" class="proimg">
+
+	<!--商品名称及分享-->
+	<section class="product">
+		<div style="overflow: auto;">
+			<p class="name">基础版[年费]</p>
+			<button id="share"><span class="glyphicon glyphicon-link"></span><br>分享</button>
+		</div>
+		<p class="price">￥1800 <span> ￥4800.00</span></p>
+	</section>
+
+	<!--选择数量-->
+	<div class="selectnum">
+		<span>请选择数量</span>
+		<div style="float: right;">
+			<button class="btndown">-</button>
+			<span id="num"> 1 </span>
+			<button class="btnup">+</button>
+		</div>
+	</div>
+
+	<!--店铺信息-->
+	<section class="shopmes">
+		<div>
+		<a href="#">
+			<div style="overflow: auto;">
+				<div class="icons" style="background-position: -210px -140px;"></div>
+				<p>微商城</p>
+			</div>
+		</a>
+		</div>
+		<button class="btn1">7<br>全部</button>
+		<button class="btn1">1<br>新品</button>
+		<button class="btn1">0<br>促销</button>
+		<div class="lastbox">
+			<button class="btn2">全部商品</button>
+		  <button class="btn2">进店逛逛</button>
+		</div>
+	</section>
+
+	<!--商品详情-->
+	<section class="information">
+		<p>商品详情</p>
+		<p>src="../homepage/style/img/icons.png"</p>
+		<img src="../homepage/style/img/icons.png">
+	</section>
+
+	<!--页脚-->
+	<footer>
+			<button id="attention"><span class="glyphicon glyphicon-heart-empty"></span><br>关注</button>
+			<button><span class="glyphicon glyphicon-home"></span><br>店铺</button>
+			<button><span class="glyphicon glyphicon-shopping-cart"></span><br>购物车<span class="badge" style="background-color:red;">50</span></button>
+			<button class="buy">立即购买</button>
+		
+	</footer>
+
+	<!--弹出框-->
+	<div id="mask"></div>
+	<div id="popupshare" class="popup">
+		<div class="popupCon">
+			<p id="popupword">点击右上角的按钮即可分享<span class="glyphicon glyphicon-hand-up"></span></p>
+		</div>
+	</div>
+	<div id="popupbuy" class="popup">
+		<div class="popupCon">
+			<div style="margin:0 auto;width:50px;">
+				<img src="../order/style/img/success.png">
+			</div>
+			<br>
+			<p>已添加到购物车</p>
+		</div>
+	</div>
+
+<script type="text/javascript" src="javascript/message.js"></script>
+</body>
+</html>

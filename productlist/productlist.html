@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>product list</title>
+	<meta charset="utf-8">
+	<meta name="author" content="xian">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<link rel="stylesheet" type="text/css" href="style/productlist.css">
+	<!--bootstrap-->
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<!--头部-->
+	<header>
+		<a href="#">
+			<span class="glyphicon glyphicon-chevron-left returnbtn"></span>
+		</a>
+		<input type="text" placeholder="请输入关键字">
+		<button id="edit"><span class="glyphicon glyphicon-list"></span></button>
+		<div id="select">
+			<button>综合</button>|
+			<button>销量</button>|
+			<button id="sortprice">价格</button>|
+			<button id="selectmes">筛选<span class="glyphicon glyphicon-filter"></span></button>
+		</div>
+	</header>
+
+	<!--商品展示-->
+	<section>
+		<div id="product1">
+			<a href="#" class="item1">
+	  	</a>
+	  	<a href="#" class="item2">
+	  	</a>
+		</div>
+		<div id="product1">
+			<a href="#" class="item3">
+	  	</a>
+	  	<a href="#" class="item4">
+	  	</a>
+		</div>
+		<div id="product1">
+			<a href="#" class="item5">
+	  	</a>
+	  	<a href="#" class="item6">
+	  	</a>
+		</div>
+		<div id="product1">
+			<a href="#" class="item7">
+	  	</a>
+		</div>
+	</section>
+
+<!--</div> container-->
+<div id="mask"></div>
+<div id="popup">
+	<div class="popupCon">
+		<button class="btnpop"><span><span class="glyphicon glyphicon-ok-circle"></span> 限时优惠</span></button>
+		<button class="btnpop"><span><span class="glyphicon glyphicon-ok-circle"></span> 限时优惠</span></button>
+		<button class="btnpop"><span><span class="glyphicon glyphicon-ok-circle"></span> 限时优惠</span></button>
+		<button class="btnpop"><span><span class="glyphicon glyphicon-ok-circle"></span> 限时优惠</span></button>
+		<button class="btnpop"><span><span class="glyphicon glyphicon-ok-circle"></span> 限时优惠</span></button>
+		<button class="btnpop"><span><span class="glyphicon glyphicon-ok-circle"></span> 限时优惠</span></button>
+		<button class="btnpop" style="color:#ccc;border:none;" id="cancel">取消筛选</button>
+		<button class="btnpop btnpop1">筛选</button>
+	</div>
+</div>
+
+<script type="text/javascript" src="javascript/productlist.js"></script>
+</body>
+</html>

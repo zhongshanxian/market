@@ -79,9 +79,43 @@ header {
 .iconboxpar {
 	overflow: auto;
 }
+/*滚动字幕*/
+.clearfloat {
+	overflow: auto;
+}
+.fll {
+	float: left;
+	padding-right: 10px;
+}
+#header1,
+#header2,
+#header3 {
+	float: left;
+	height: 25px;
+}
+#header1 div,
+#header2 div,
+#header3 div {
+	height:25px;
+}
+.marqueeBox {
+	overflow: hidden;
+	height: 25px;
+	float: left;
+}
+#header1 a,
+#header2 a,
+#header3 a {
+	text-decoration: none;
+	font-size: 12px;
+	color: #333;
+}
+
 footer {
 	margin-top:20px;
 }
 footer .iconbox {
 	width: 33.33%;
 }
+
+
